@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Падежи</title>
+</head>
+<body>
+    <div class="maincontent">
+        <div class="mainbox">
+            <div class="mainbox__title">
+                <h1>Введите слово в именительном падеже и выберите желаемый падеж</h1>
+            </div>
+            <div class="mainbox__maincontent">
+                <div class="textcases">
+                    <div class="textcases__input">
+                        <input type="text" placeholder="Введите слово">
+                    </div>
+                    <div class="textcases__cases">
+                        <select name="cases" id="select" class="select">
+                            <option value="rod" class="cases__value">Родительный</option>
+                            <option value="dat" class="cases__value">Дательный</option>
+                            <option value="vin" class="cases__value">Винительный</option>
+                            <option value="tvor" class="cases__value">Творительный</option>
+                            <option value="pred" class="cases__value">Предложный</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="mainbox__button">
+                    <button class="">Просклонять</button>
+                </div>
+            </div>
+            <div class="resultbox">
+                <p></p>
+            </div>
+        </div>
+        
+    </div>
+<script src="index.js"></script>
+</body>
+</html>
+
+
