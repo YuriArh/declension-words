@@ -33,6 +33,9 @@ const caseRod = word => {
   } else if (lastTwoSymbol == 'ие') {
     let finalWord = word.replace(/.$/, 'я');
     renderWord(finalWord);
+  } else if (lastSymbol == 'й') {
+    let finalWord = word.replace(/.$/, 'я');
+    renderWord(finalWord);
   } else {
     let finalWord = word + 'а';
     renderWord(finalWord);
@@ -58,6 +61,9 @@ const caseDat = word => {
     let finalWord = word.replace(/.$/, 'у');
     renderWord(finalWord);
   } else if (lastTwoSymbol == 'ие') {
+    let finalWord = word.replace(/.$/, 'ю');
+    renderWord(finalWord);
+  } else if (lastSymbol == 'й') {
     let finalWord = word.replace(/.$/, 'ю');
     renderWord(finalWord);
   } else {
@@ -86,6 +92,9 @@ const caseVin = word => {
     renderWord(finalWord);
   } else if (lastTwoSymbol == 'ие') {
     let finalWord = word.replace(/.$/, 'е');
+    renderWord(finalWord);
+  } else if (lastSymbol == 'й') {
+    let finalWord = word.replace(/.$/, 'й');
     renderWord(finalWord);
   } else {
     renderWord(word);
@@ -118,6 +127,10 @@ const caseTvor = word => {
     let finalWord = word.replace(/.$/, 'е');
     finalWord = finalWord + 'м';
     renderWord(finalWord);
+  } else if (lastSymbol == 'й') {
+    let finalWord = word.replace(/.$/, 'е');
+    finalWord = finalWord + 'м';
+    renderWord(finalWord);
   } else {
     let finalWord = word + 'ом';
     renderWord(finalWord);
@@ -143,6 +156,9 @@ const casePred = word => {
     let finalWord = word.replace(/.$/, 'е');
     renderWord(finalWord);
   } else if (lastTwoSymbol == 'ие') {
+    let finalWord = word.replace(/.$/, 'е');
+    renderWord(finalWord);
+  } else if (lastSymbol == 'й') {
     let finalWord = word.replace(/.$/, 'е');
     renderWord(finalWord);
   } else {
@@ -171,7 +187,6 @@ button.addEventListener('click', () => {
   }
   if (word === '') {
     renderWord('Введите слово');
-
   }
 });
 
